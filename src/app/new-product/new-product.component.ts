@@ -5,9 +5,10 @@ import {ProductService} from "../services/product.service";
 
 @Component({
   selector: 'app-new-product',
-  templateUrl: './new-product.component.html',
-  styleUrls: ['./new-product.component.css']
-})
+templateUrl: './new-product.component.html',
+styleUrls: ['./new-product.component.css'
+]})
+
 export class NewProductComponent implements OnInit {
   productFormGroup!:FormGroup;
   constructor(private fb: FormBuilder, private prodService:ProductService) { }
